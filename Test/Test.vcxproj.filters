@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DoubleLinkedList">
+      <UniqueIdentifier>{8aa2cb3e-02c0-454c-9169-3f447539350f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queue">
+      <UniqueIdentifier>{eb4a4713-b926-4714-9444-f4c68699d914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stack">
+      <UniqueIdentifier>{0d4d259c-81e9-42a2-9f70-8b690ec64735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DoubleLinkedList\ManualTest">
+      <UniqueIdentifier>{1f96548f-027f-4204-90fb-4eb32c9e4c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DoubleLinkedList\AutoTest">
+      <UniqueIdentifier>{57717291-ede7-4a07-a4ee-8e79115b1914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stack\ManualTest">
+      <UniqueIdentifier>{5b4568d0-b96e-44fc-ac3b-c68a6029e004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stack\AutoTest">
+      <UniqueIdentifier>{0acdb271-9374-4042-9658-7a197ffdfcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queue\ManualTest">
+      <UniqueIdentifier>{09167920-7626-47c2-968c-c3919b3a5820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queue\AutoTest">
+      <UniqueIdentifier>{f94419a6-6863-4220-983d-ed46ffeb1baa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ManualTest_ConstIterator.cpp">
+      <Filter>DoubleLinkedList\ManualTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualTest_DoubleLinkedList.cpp">
+      <Filter>DoubleLinkedList\ManualTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualTest_QuickSort.cpp">
+      <Filter>DoubleLinkedList\ManualTest</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoTest_ConstIterator.cpp">
+      <Filter>DoubleLinkedList\AutoTest</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoTest_DoubleLinkedList.cpp">
+      <Filter>DoubleLinkedList\AutoTest</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoTest_QuickSort.cpp">
+      <Filter>DoubleLinkedList\AutoTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualTest_Stack.cpp">
+      <Filter>Stack\ManualTest</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoTest_Stack.cpp">
+      <Filter>Stack\AutoTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ManualTest_ConstIterator.h">
+      <Filter>DoubleLinkedList\ManualTest</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualTest_DoubleLinkedList.h">
+      <Filter>DoubleLinkedList\ManualTest</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualTest_QuickSort.h">
+      <Filter>DoubleLinkedList\ManualTest</Filter>
+    </ClInclude>
+    <ClInclude Include="TestTool.h">
+      <Filter>DoubleLinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualTest_Stack.h">
+      <Filter>Stack\ManualTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
