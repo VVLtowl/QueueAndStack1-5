@@ -298,6 +298,12 @@ DoubleLinkedList<DataType>::DoubleLinkedList()
 template <typename DataType>
 bool DoubleLinkedList<DataType>::Insert(ConstIterator& positionIter, const DataType& data)
 {
+	//‹óŽQÆ‚Ìê‡Ž¸”s
+	if (&data == nullptr)
+	{
+		return false;
+	}
+
 	//V—v‘f‚Ìƒm[ƒh‚ðì¬
 	Node* newNode = new Node();
 	newNode->data = data;

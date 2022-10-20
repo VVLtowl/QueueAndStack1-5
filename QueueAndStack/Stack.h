@@ -15,7 +15,7 @@ class Stack
 {
 private:
 	// @brief		双方向リスト
-	DoubleLinkedList<DataType> list;
+	DoubleLinkedList<DataType> m_List;
 
 public:
 
@@ -34,7 +34,7 @@ public:
 	* @retval	true: プッシュ成功の場合	
 	* @retval	false: プッシュ失敗の場合
 	********************************************************/
-	bool Push(DataType data);
+	bool Push(const DataType& data);
 
 	/*********************************************************
 	* @brief		ポップ

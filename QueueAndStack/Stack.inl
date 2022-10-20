@@ -7,14 +7,14 @@
 template<class DataType>
 inline const int Stack<DataType>::Count() const
 {
-	return list.Count();
+	return m_List.Count();
 }
 
 template<class DataType>
-inline bool Stack<DataType>::Push(DataType data)
+inline bool Stack<DataType>::Push(const DataType& data)
 {
-	auto iter = list.End();
-	return list.Insert(iter, data);
+	auto iter = m_List.End();
+	return m_List.Insert(iter, data);
 }
 
 template<class DataType>
@@ -26,13 +26,13 @@ inline bool Stack<DataType>::Pop(DataType* pOptData)
 		return false;
 	}
 
-	//先頭要素を取り出す
-	auto iter = list.End();
+	//末尾要素を取り出す
+	auto iter = m_List.End();
 	iter--;
 	if (pOptData != nullptr)
 	{
 		*pOptData = *iter;
 	}
-	list.Remove(iter);
+	m_List.Remove(iter);
 	return true;
 }

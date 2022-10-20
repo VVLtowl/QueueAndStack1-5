@@ -54,6 +54,12 @@
     <ClCompile Include="AutoTest_Stack.cpp">
       <Filter>Stack\AutoTest</Filter>
     </ClCompile>
+    <ClCompile Include="ManualTest_Queue.cpp">
+      <Filter>Queue\ManualTest</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoTest_Queue.cpp">
+      <Filter>Queue\AutoTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ManualTest_ConstIterator.h">
@@ -71,5 +77,11 @@
     <ClInclude Include="ManualTest_Stack.h">
       <Filter>Stack\ManualTest</Filter>
     </ClInclude>
+    <ClInclude Include="ManualTest_Queue.h">
+      <Filter>Queue\ManualTest</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

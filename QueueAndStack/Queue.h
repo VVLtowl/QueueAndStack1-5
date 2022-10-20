@@ -15,7 +15,7 @@ class Queue
 {
 private:
 	// @brief		双方向リスト
-	DoubleLinkedList<DataType> list;
+	DoubleLinkedList<DataType> m_List;
 
 public:
 
@@ -34,14 +34,17 @@ public:
 	* @retval	true: プッシュ成功の場合	
 	* @retval	false: プッシュ失敗の場合
 	********************************************************/
-	bool Push(DataType data);
+	bool Push(const DataType& data);
 
 	/*********************************************************
-	* @brief	ポップ
-	* @details	末尾の要素を取り出す。
-	* @return	末尾の要素
+	* @brief		ポップ
+	* @details		先頭要素が引数経由で渡され、その要素がリストから削除される。
+	*				空である場合に失敗。
+	* @param[out]	pOptData: 取り出す要素を格納ための引数
+	* @retval		true: ポップ成功の場合
+	* @retval		false: ポップ失敗の場合
 	********************************************************/
-	DataType& Pop();
+	bool Pop(DataType* pOptData = nullptr);
 };
 
 #include "Queue.inl"

@@ -43,16 +43,19 @@
   <ItemGroup>
     <ClCompile Include="AutoTest_ConstIterator.cpp" />
     <ClCompile Include="AutoTest_DoubleLinkedList.cpp" />
+    <ClCompile Include="AutoTest_Queue.cpp" />
     <ClCompile Include="AutoTest_QuickSort.cpp" />
     <ClCompile Include="AutoTest_Stack.cpp" />
     <ClCompile Include="ManualTest_ConstIterator.cpp" />
     <ClCompile Include="ManualTest_DoubleLinkedList.cpp" />
+    <ClCompile Include="ManualTest_Queue.cpp" />
     <ClCompile Include="ManualTest_QuickSort.cpp" />
     <ClCompile Include="ManualTest_Stack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ManualTest_ConstIterator.h" />
     <ClInclude Include="ManualTest_DoubleLinkedList.h" />
+    <ClInclude Include="ManualTest_Queue.h" />
     <ClInclude Include="ManualTest_QuickSort.h" />
     <ClInclude Include="ManualTest_Stack.h" />
     <ClInclude Include="TestTool.h" />
