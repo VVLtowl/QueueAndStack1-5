@@ -16,7 +16,6 @@ namespace ex03_ListSort
 #pragma region ========== クイックソート ==========
 
 
-#ifdef MANUAL_TEST_SORT_WITH_WRONG_COMPARATOR
 	/*********************************************************
 	* @brief		型などが不適切なキー指定が引数で渡された時の挙動
 	* @details		ID:0-7
@@ -25,14 +24,16 @@ namespace ex03_ListSort
 	********************************************************/
 	TEST(QuickSortTest, WithoutComparator)
 	{
+
+#ifdef MANUAL_TEST_SORT_WITH_WRONG_COMPARATOR
 		DoubleLinkedList<ScoreData> list;
 
 		//キー指定をしなくて、ソートを行う
 		list.Sort([]() {return true; });
+#endif
+		SUCCEED();
 	}
-#endif // MANUAL_TEST_SORT_WITH_WRONG_COMPARATOR
 
-#ifdef MANUAL_TEST_SORT_NOT_CONST
 	/*********************************************************
 	* @brief		非constのメソッドであるか
 	* @details		ID:0-8
@@ -41,10 +42,12 @@ namespace ex03_ListSort
 	********************************************************/
 	TEST(QuickSortTest, NotConst)
 	{
+#ifdef MANUAL_TEST_SORT_NOT_CONST
 		const DoubleLinkedList<ScoreData> list;
 		list.Sort([]() {return true; });
+#endif
+		SUCCEED();
 	}
-#endif // MANUAL_TEST_SORT_WITH_WRONG_COMPARATOR
 
 
 #pragma endregion

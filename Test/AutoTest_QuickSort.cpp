@@ -240,7 +240,7 @@ namespace ex03_ListSort
 	*				キー指定をしなかった(nullptrを渡した)時、
 	*				エラー含めて、何も起こらないかをチェック。
 	********************************************************/
-	TEST(QuickSortTest, WithoutComparator)
+	TEST(QuickSortTest, WithoutKeyCompare)
 	{
 		DoubleLinkedList<ScoreData> list;
 

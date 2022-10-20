@@ -1,22 +1,20 @@
 /*********************************************************
-* @brief		スタックのテスト(手動テスト)
+* @brief		キューのテスト(手動テスト)
 * @date			2022/10/19
 ********************************************************/
 #include "gtest/gtest.h"
-#include "../QueueAndStack/Stack.h"
-#include "../QueueAndStack/ScoreData.h"
-#include "ManualTest_Stack.h"
+#include "../QueueAndStack/Queue.h"
+#include "ManualTest_Queue.h"
 
-//クイックソートの手動テスト実行
-#define GT_MANUAL_TEST_STACK
+//キューの手動テスト実行
+#define GT_MANUAL_TEST_QUEUE
 
-namespace ex01_Stack
+namespace ex01_Queue
 {
-#ifdef  GT_MANUAL_TEST_STACK
+#ifdef  GT_MANUAL_TEST_QUEUE
 
-#pragma region ========== Stack ==========
+#pragma region ========== Queue ==========
 
-#ifdef MANUAL_TEST_STACK_COUNT_IS_CONST
 	/*********************************************************
 	* @brief		constのメソッドであるか
 	* @details		ID:0-7
@@ -25,12 +23,13 @@ namespace ex01_Stack
 	********************************************************/
 	TEST(StackCountTest, IsConst)
 	{
-		const Stack<int> stack;
-		stack.Count();
-	}
+#ifdef MANUAL_TEST_QUEUE_COUNT_IS_CONST
+		const Queue<int> queue;
+		queue.Count();
 #endif
+		SUCCEED();
+	}
 
-#ifdef MANUAL_TEST_STACK_PUSH_NOT_CONST
 	/*********************************************************
 	* @brief		非constのメソッドであるか
 	* @details		ID:0-10
@@ -39,12 +38,13 @@ namespace ex01_Stack
 	********************************************************/
 	TEST(StackPushTest, NotConst)
 	{
-		const Stack<int> stack;
-		stack.Push(0);
-	}
+#ifdef MANUAL_TEST_QUEUE_PUSH_NOT_CONST
+		const Queue<int> queue;
+		queue.Push(0);
 #endif
+		SUCCEED();
+	}
 
-#ifdef MANUAL_TEST_STACK_POP_NOT_CONST
 	/*********************************************************
 	* @brief		非constのメソッドであるか
 	* @details		ID:0-14
@@ -53,16 +53,18 @@ namespace ex01_Stack
 	********************************************************/
 	TEST(StackPopTest, NotConst)
 	{
-		const Stack<int> stack;
-		stack.Pop();
-	}
+#ifdef MANUAL_TEST_QUEUE_POP_NOT_CONST
+		const Queue<int> queue;
+		queue.Pop();
 #endif
+		SUCCEED();
+	}
 
 #pragma endregion
 
 
 
-#endif //  GT_MANUAL_TEST_SORT
+#endif 
 }
 
 

@@ -4,10 +4,9 @@
 ********************************************************/
 #include "gtest/gtest.h"
 #include "../QueueAndStack/Stack.h"
-#include "../QueueAndStack/ScoreData.h"
 #include "ManualTest_Stack.h"
 
-//クイックソートの手動テスト実行
+//スタックの手動テスト実行
 #define GT_MANUAL_TEST_STACK
 
 namespace ex01_Stack
@@ -16,7 +15,6 @@ namespace ex01_Stack
 
 #pragma region ========== Stack ==========
 
-#ifdef MANUAL_TEST_STACK_COUNT_IS_CONST
 	/*********************************************************
 	* @brief		constのメソッドであるか
 	* @details		ID:0-7
@@ -25,12 +23,13 @@ namespace ex01_Stack
 	********************************************************/
 	TEST(StackCountTest, IsConst)
 	{
+#ifdef MANUAL_TEST_STACK_COUNT_IS_CONST
 		const Stack<int> stack;
 		stack.Count();
-	}
 #endif
+		SUCCEED();
+	}
 
-#ifdef MANUAL_TEST_STACK_PUSH_NOT_CONST
 	/*********************************************************
 	* @brief		非constのメソッドであるか
 	* @details		ID:0-10
@@ -39,12 +38,13 @@ namespace ex01_Stack
 	********************************************************/
 	TEST(StackPushTest, NotConst)
 	{
+#ifdef MANUAL_TEST_STACK_PUSH_NOT_CONST
 		const Stack<int> stack;
 		stack.Push(0);
-	}
 #endif
+		SUCCEED();
+	}
 
-#ifdef MANUAL_TEST_STACK_POP_NOT_CONST
 	/*********************************************************
 	* @brief		非constのメソッドであるか
 	* @details		ID:0-14
@@ -53,10 +53,12 @@ namespace ex01_Stack
 	********************************************************/
 	TEST(StackPopTest, NotConst)
 	{
+#ifdef MANUAL_TEST_STACK_POP_NOT_CONST
 		const Stack<int> stack;
 		stack.Pop();
-	}
 #endif
+		SUCCEED();
+	}
 
 #pragma endregion
 
